@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 26 f?vr. 2023 19:21:54 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="ma.fstm.ilisi2.projects.biblio.model.bo.Livre" table="LIVRE" schema="HR" optimistic-lock="version">
+        <id name="isbn" type="string">
+            <column name="ISBN" length="20" />
+            <generator class="assigned" />
+        </id>
+        <property name="titre" type="string">
+            <column name="TITRE" length="20" />
+        </property>
+    </class>
+</hibernate-mapping>
